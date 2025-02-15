@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  body {
+    @apply font-albert text-white overflow-x-hidden
+  }
+}
+
+.header-top__links::after {
+  content: '';
+  @apply absolute top-0 right-0 translate-x-10 z-0 xl:w-[40%] 2xl:w-[48%] h-full bg-brand-gray-600 -skew-x-[45deg]
+}
+
+.swiper-hero__cover {
+  @apply !relative
+}
+
+.swiper-hero__cover::after {
+  content: '';
+  @apply absolute inset-0 z-10 size-full bg-brand-gray-500/40
+}
+
+.hero-swiper .swiper-pagination-bullet {
+   @apply size-2.5 rounded-full bg-white/50 
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+  transition: width 0.3s ease-in-out;
+  @apply !rounded !h-2.5 !w-50 !bg-primary
+}
