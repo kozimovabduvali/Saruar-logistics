@@ -1554,6 +1554,14 @@ body{
     padding-top: 9rem;
   }
 
+  .\32xl\:pt-10{
+    padding-top: 2.5rem;
+  }
+
+  .\32xl\:pt-11{
+    padding-top: 2.75rem;
+  }
+
   .\32xl\:text-\[3\.4375rem\]\/\[4\.3312rem\]{
     font-size: 3.4375rem;
     line-height: 4.3312rem;
