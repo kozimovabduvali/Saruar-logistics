@@ -748,6 +748,10 @@ body{
   --tw-translate-y: -0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.translate-y-14{
+  --tw-translate-y: 3.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .-skew-x-\[45deg\]{
   --tw-skew-x: -45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -781,6 +785,9 @@ body{
 }
 .gap-5{
   gap: 1.25rem;
+}
+.gap-30{
+  gap: 1.875rem;
 }
 .gap-x-16{
   -moz-column-gap: 4rem;
@@ -1325,6 +1332,10 @@ body{
 
   .lg\:items-start{
     align-items: flex-start;
+  }
+
+  .lg\:items-center{
+    align-items: center;
   }
 
   .lg\:gap-9{
