@@ -126,7 +126,7 @@
       </div>
     </nav>
     <!-- Nav Mobile -->
-    <div class="bg-primary xl:hidden flex items-center justify-between gap-x-30 py-4 lg:py-5 px-5">
+    <div class="bg-primary xl:hidden flex items-center justify-between gap-x-30 py-4 lg:py-5 px-30">
       <!-- Mobile Menu BTN -->
       <button class="transition duration-200 hover:opacity-75">
         <svg width="35" height="25" viewBox="0 0 35 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -160,33 +160,331 @@
   <!-- Main -->
   <main>
     <!-- Hero -->
-    <section class="relative z-0">
+    <section class="relative z-0 overflow-x-hidden">
       <!-- Slider -->
-      <div class="hero-swiper">
-        <div class="swiper-wrapper">
+      <div class="hero-swiper relative z-0">
+        <div class="swiper-wrapper !h-full">
           <!-- Slide 1 -->
-          <div class="swiper-slide">
-            <div class="relative z-0 overflow-hidden h-[52.3125rem] swiper-hero__cover">
-              <img class="absolute inset-0 size-full object-cover" src="./assets/image/hero-slide__1.png" alt="">
+          <div class="swiper-slide relative bg-cover bg-center bg-no-repeat min-h-[38.5625rem] lg:!min-h-[52.25rem]"
+            style="background-image: url('./assets/image/hero-slide__1.png');">
+            <div class="relative z-20 overflow-hidden py-32 lg:py-[15.625rem] h-full">
+              <!-- Content -->
+              <div class="max-w-base w-full flex gap-x-32 2xl:gap-x-44 mx-auto px-30">
+                <!-- Left -->
+                <div class="w-full max-w-[58rem]">
+                  <h1
+                    class="font-plus-sans font-bold text-[2.1875rem]/[2.875rem] lg:text-5xl 2xl:text-[3.4375rem]/[4.3312rem]">
+                    Надежная логистика по всему миру — от склада до склада!
+                  </h1>
+                  <p class="max-w-[39.9375rem] mt-4 lg:mt-30">
+                    Saruar Logistics — это надежный партнер для решения логистических задач. Перевозки FTL,
+                    мультимодальные решения, рефрижераторные перевозки и др.
+                  </p>
+                  <button
+                    class="h-sixty flex items-center justify-center gap-x-4 bg-primary text-white rounded-full px-8 transition duration-200 hover:border-primary hover:bg-primary/75 mt-14">
+                    <span class="font-bold font-plus-sans text-lg">ОСТАВИТЬ ЗАЯВКУ</span>
+                    <span class="size-30 bg-white text-primary rounded-full inline-flex items-center justify-center">
+                      <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M14.7794 6.01265C15.0625 5.72952 15.0625 5.27048 14.7794 4.98735L10.1655 0.373475C9.88238 0.0903451 9.42334 0.0903451 9.14021 0.373475C8.85708 0.656605 8.85708 1.11565 9.14021 1.39878L13.2414 5.5L9.14021 9.60122C8.85708 9.88435 8.85708 10.3434 9.14021 10.6265C9.42334 10.9097 9.88238 10.9097 10.1655 10.6265L14.7794 6.01265ZM0.733399 6.225L14.2667 6.225L14.2667 4.775L0.733398 4.775L0.733399 6.225Z"
+                          fill="currentColor" />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <!-- Right -->
+                <div class="hidden xl:block mt-70">
+                  <!-- Play Video Btn -->
+                  <button
+                    class="border-[0.1875rem] border-white rounded-full size-[8.375rem] flex items-center justify-center transition duration-200 hover:border-primary hover:text-primary">
+                    <svg class="ml-3" width="70" height="81" viewBox="0 0 70 81" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M70 40.5L0.25 80.7702V0.22982L70 40.5Z" fill="currentColor" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
+            <!-- angular-shape__center -->
+            <img
+              class="absolute z-10 top-0 left-1/2 lg:-left-14 -translate-x-1/2 lg:translate-x-1/2 h-80 md:h-96 2xl:h-[35rem]"
+              src="./assets/image/angular-shape__center.png" alt="angular-shape__center">
           </div>
-          <!-- Slide 2 --> 
-          <div class="swiper-slide">
-            <div class="relative z-0 overflow-hidden h-[52.3125rem] swiper-hero__cover">
-              <img class="absolute inset-0 size-full object-cover" src="./assets/image/hero-slide__2.png" alt="">
+          <!-- Slide 2 -->
+          <div class="swiper-slide relative bg-cover bg-center bg-no-repeat min-h-[38.5625rem] lg:!min-h-[52.25rem]"
+            style="background-image: url('./assets/image/hero-slide__2.png');">
+            <div class="relative z-20 overflow-hidden py-32 lg:py-[15.625rem] w-full">
+              <!-- Content -->
+              <div class="max-w-base w-full flex gap-x-32 2xl:gap-x-44 mx-auto px-30">
+                <!-- Left -->
+                <div class="w-full max-w-[58rem]">
+                  <h1
+                    class="font-plus-sans font-bold text-[2.1875rem]/[2.875rem] lg:text-5xl 2xl:text-[3.4375rem]/[4.3312rem]">
+                    Гуанджоу - Москва
+                    за 13 дней
+                  </h1>
+                  <p class="max-w-[39.9375rem] mt-4 lg:mt-30">
+                    Грузоперевозки между Гуанджоу и Москвой всего за 13 дней. Быстрая и надежная доставка в обоих
+                    направлениях без задержек и лишних затрат.
+                  </p>
+                  <button
+                    class="h-sixty flex items-center justify-center gap-x-4 bg-primary text-white rounded-full px-8 transition duration-200 hover:border-primary hover:bg-primary/75 mt-14">
+                    <span class="font-bold font-plus-sans text-lg">ОСТАВИТЬ ЗАЯВКУ</span>
+                    <span class="size-30 bg-white text-primary rounded-full inline-flex items-center justify-center">
+                      <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M14.7794 6.01265C15.0625 5.72952 15.0625 5.27048 14.7794 4.98735L10.1655 0.373475C9.88238 0.0903451 9.42334 0.0903451 9.14021 0.373475C8.85708 0.656605 8.85708 1.11565 9.14021 1.39878L13.2414 5.5L9.14021 9.60122C8.85708 9.88435 8.85708 10.3434 9.14021 10.6265C9.42334 10.9097 9.88238 10.9097 10.1655 10.6265L14.7794 6.01265ZM0.733399 6.225L14.2667 6.225L14.2667 4.775L0.733398 4.775L0.733399 6.225Z"
+                          fill="currentColor" />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <!-- Right -->
+                <div class="hidden xl:block mt-70">
+                  <!-- Play Video Btn -->
+                  <button
+                    class="border-[0.1875rem] border-white rounded-full size-[8.375rem] flex items-center justify-center transition duration-200 hover:border-primary hover:text-primary">
+                    <svg class="ml-3" width="70" height="81" viewBox="0 0 70 81" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M70 40.5L0.25 80.7702V0.22982L70 40.5Z" fill="currentColor" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
-          </div> 
+            <!-- angular-shape__center -->
+            <img
+              class="absolute z-10 top-0 left-1/2 lg:-left-14 -translate-x-1/2 lg:translate-x-1/2 h-80 md:h-96 2xl:h-[35rem]"
+              src="./assets/image/angular-shape__center.png" alt="angular-shape__center">
+          </div>
           <!-- Slide 3 -->
-          <div class="swiper-slide">
-            <div class="relative z-0 overflow-hidden h-[52.3125rem] swiper-hero__cover">
-              <img class="absolute inset-0 size-full object-cover" src="./assets/image/hero-slide__3.png" alt="">
+          <div class="swiper-slide relative bg-cover bg-center bg-no-repeat min-h-[38.5625rem] lg:!min-h-[52.25rem]"
+            style="background-image: url('./assets/image/hero-slide__3.png');">
+            <div class="relative z-20 overflow-hidden py-32 lg:py-[15.625rem]">
+              <!-- Content -->
+              <div class="max-w-base w-full flex gap-x-32 2xl:gap-x-44 mx-auto px-30">
+                <!-- Left -->
+                <div class="w-full max-w-[58rem]">
+                  <h1
+                    class="font-plus-sans font-bold text-[2.1875rem]/[2.875rem] lg:text-5xl 2xl:text-[3.4375rem]/[4.3312rem]">
+                    Грузоперевозки
+                    от склада до склада
+                  </h1>
+                  <p class="max-w-[39.9375rem] mt-4 lg:mt-30">
+                    Грузоперевозки от склада до склада – быстро, надежно,
+                    без лишних хлопот!
+                  </p>
+                  <button
+                    class="h-sixty flex items-center justify-center gap-x-4 bg-primary text-white rounded-full px-8 transition duration-200 hover:border-primary hover:bg-primary/75 mt-14">
+                    <span class="font-bold font-plus-sans text-lg">ОСТАВИТЬ ЗАЯВКУ</span>
+                    <span class="size-30 bg-white text-primary rounded-full inline-flex items-center justify-center">
+                      <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M14.7794 6.01265C15.0625 5.72952 15.0625 5.27048 14.7794 4.98735L10.1655 0.373475C9.88238 0.0903451 9.42334 0.0903451 9.14021 0.373475C8.85708 0.656605 8.85708 1.11565 9.14021 1.39878L13.2414 5.5L9.14021 9.60122C8.85708 9.88435 8.85708 10.3434 9.14021 10.6265C9.42334 10.9097 9.88238 10.9097 10.1655 10.6265L14.7794 6.01265ZM0.733399 6.225L14.2667 6.225L14.2667 4.775L0.733398 4.775L0.733399 6.225Z"
+                          fill="currentColor" />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <!-- Right -->
+                <div class="hidden xl:block mt-70">
+                  <!-- Play Video Btn -->
+                  <button
+                    class="border-[0.1875rem] border-white rounded-full size-[8.375rem] flex items-center justify-center transition duration-200 hover:border-primary hover:text-primary">
+                    <svg class="ml-3" width="70" height="81" viewBox="0 0 70 81" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M70 40.5L0.25 80.7702V0.22982L70 40.5Z" fill="currentColor" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
+            <!-- angular-shape__center -->
+            <img
+              class="absolute z-10 top-0 left-1/2 lg:-left-14 -translate-x-1/2 lg:translate-x-1/2 h-80 md:h-96 2xl:h-[35rem]"
+              src="./assets/image/angular-shape__center.png" alt="angular-shape__center">
           </div>
         </div>
-        <div class="max-w-base -mt-30 relative z-10 mx-auto px-30">
+        <div class="max-w-base w-full absolute left-1/2 -translate-x-1/2 -translate-y-10 xl:-translate-y-24 z-10 px-30">
           <div class="swiper-pagination1__hero"></div>
         </div>
       </div>
+      <!-- angular-shape  -->
+      <img class="absolute right-0 bottom-0 z-10 h-[17.3125rem] hidden xl:inline-block"
+        src="./assets/image/angular-shape.png" alt="angular-shape">
+    </section>
+    <!-- Statistics section displaying key company metrics  -->
+    <section class="relative company-metrics">
+      <div
+        class="relative z-10 flex flex-col md:flex-row md:items-center gap-y-9 gap-x-16 lg:gap-x-24 2xl:gap-x-40 md:h-[19.375rem] max-w-base mx-auto px-30 py-30 lg:py-8">
+        <!-- 1 -->
+        <div>
+          <h4 class="font-plus-sans font-extrabold text-brand-gray-600 text-3xl lg:text-[2.75rem]/[3.465rem]">10+ лет
+          </h4>
+          <p class="text-brand-gray-500 mt-1">Работаем с 2014 года</p>
+        </div>
+        <!-- 2 -->
+        <div>
+          <h4 class="font-plus-sans font-extrabold text-brand-gray-600 text-3xl lg:text-[2.75rem]/[3.465rem]">50+</h4>
+          <p class="text-brand-gray-500 mt-1">автопарк фур</p>
+        </div>
+        <!-- 1 -->
+        <div>
+          <h4 class="font-plus-sans font-extrabold text-brand-gray-600 text-3xl lg:text-[2.75rem]/[3.465rem]">30+</h4>
+          <p class="text-brand-gray-500 mt-1">стран</p>
+        </div>
+        <!-- 1 -->
+        <div>
+          <h4 class="font-plus-sans font-extrabold text-brand-gray-600 text-3xl lg:text-[2.75rem]/[3.465rem]">25 000+
+          </h4>
+          <p class="text-brand-gray-500 mt-1">перевозок в год</p>
+        </div>
+      </div>
+    </section>
+    <!-- Saruar Logistics -->
+    <section class="pt-50 md:pt-20  2xl:pt-36 overflow-x-hidden">
+      <div class="max-w-base mx-auto px-30 overflow-x-hidden">
+        <!-- Title -->
+        <div class="text-left lg:text-center">
+          <span class="text-primary font-medium">Saruar Logistics</span>
+          <h2
+            class="font-plus-sans font-bold text-brand-gray-700 text-3xl lg:text-[2.75rem]/[3.465rem] mb-2.5 lg:mb-30 mt-2.5">
+            Наши услуги</h2>
+          <p class="text-brand-gray-500">Эффективные логистические решения для вашего бизнеса</p>
+        </div>
+        <!-- Cards -->
+        <div class="product-swiper__1 mt-12 lg:mt-sixty pb-20">
+          <div class="swiper-wrapper">
+            <!-- 1 -->
+            <div class="swiper-slide">
+              <div class="group">
+                <div class="overflow-hidden h-[17rem] lg:h-96">
+                  <img class="size-full object-cover group-hover:scale-110 transition duration-200"
+                    src="./assets/image/swiper-product__1.png" alt="swiper-product__1">
+                </div>
+                <div
+                  class="cursor-pointer w-full flex items-center justify-between gap-x-4 bg-white lg:bg-primary text-primary lg:text-white px-30 transition duration-200 hover:bg-primary/75 py-3 border-l-4 border-primary lg:border-transparent">
+                  <h4 class="font-semibold font-plus-sans text-lg lg:text-[1.75rem]/[2.1rem]">Автомобильные перевозки
+                  </h4>
+                  <div
+                    class="shrink-0 size-5 lg:size-30 bg-primary lg:bg-white text-white lg:text-primary rounded-full inline-flex items-center justify-center">
+                    <svg class="w-2.5 lg:w-4 h-2 lg:h-2.5" viewBox="0 0 15 11" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.7794 6.01265C15.0625 5.72952 15.0625 5.27048 14.7794 4.98735L10.1655 0.373475C9.88238 0.0903451 9.42334 0.0903451 9.14021 0.373475C8.85708 0.656605 8.85708 1.11565 9.14021 1.39878L13.2414 5.5L9.14021 9.60122C8.85708 9.88435 8.85708 10.3434 9.14021 10.6265C9.42334 10.9097 9.88238 10.9097 10.1655 10.6265L14.7794 6.01265ZM0.733399 6.225L14.2667 6.225L14.2667 4.775L0.733398 4.775L0.733399 6.225Z"
+                        fill="currentColor" />
+                    </svg>
+                  </div>
+                </div>
+                <!-- List -->
+                <ul class="hidden lg:block bg-white text-brand-gray-700 list-disc drop-shadow-lg py-6 pr-30 pl-10">
+                  <li>
+                    <p>FTL (Full Truck Load).</p>
+                  </li>
+                  <li>
+                    <p>Перевозки рефрижераторами.</p>
+                  </li>
+                  <li>
+                    <p>Перевозка негабаритных грузов.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="swiper-slide">
+              <div class="group">
+                <div class="overflow-hidden h-[17rem] lg:h-96">
+                  <img class="size-full object-cover group-hover:scale-110 transition duration-200"
+                    src="./assets/image/swiper-product__2.jpeg" alt="swiper-product__2">
+                </div>
+                <div
+                  class="cursor-pointer w-full flex items-center justify-between gap-x-4 bg-white lg:bg-primary text-primary lg:text-white px-30 transition duration-200 hover:bg-primary/75 py-3 border-l-4 border-primary lg:border-transparent">
+                  <h4 class="font-semibold font-plus-sans text-lg lg:text-[1.75rem]/[2.1rem]">
+                    Мультимодальные перевозки
+                  </h4>
+                  <div
+                    class="shrink-0 size-5 lg:size-30 bg-primary lg:bg-white text-white lg:text-primary rounded-full inline-flex items-center justify-center">
+                    <svg class="w-2.5 lg:w-4 h-2 lg:h-2.5" viewBox="0 0 15 11" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.7794 6.01265C15.0625 5.72952 15.0625 5.27048 14.7794 4.98735L10.1655 0.373475C9.88238 0.0903451 9.42334 0.0903451 9.14021 0.373475C8.85708 0.656605 8.85708 1.11565 9.14021 1.39878L13.2414 5.5L9.14021 9.60122C8.85708 9.88435 8.85708 10.3434 9.14021 10.6265C9.42334 10.9097 9.88238 10.9097 10.1655 10.6265L14.7794 6.01265ZM0.733399 6.225L14.2667 6.225L14.2667 4.775L0.733398 4.775L0.733399 6.225Z"
+                        fill="currentColor" />
+                    </svg>
+                  </div>
+                </div>
+                <!-- List -->
+                <ul
+                  class="hidden lg:block bg-white min-h-[7.5rem] text-brand-gray-700 list-disc drop-shadow-lg py-6 pr-30 pl-10">
+                  <li>
+                    <p>Сочетание автомильного и железнодорожного транспорта</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="swiper-slide">
+              <div class="group">
+                <div class="overflow-hidden h-[17rem] lg:h-96">
+                  <img class="size-full object-cover group-hover:scale-110 transition duration-200"
+                    src="./assets/image/swiper-product__3.jpeg" alt="swiper-product__3">
+                </div>
+                <div
+                  class="cursor-pointer w-full flex items-center justify-between gap-x-4 bg-white lg:bg-primary text-primary lg:text-white px-30 transition duration-200 hover:bg-primary/75 py-3 border-l-4 border-primary lg:border-transparent">
+                  <h4 class="font-semibold font-plus-sans text-lg lg:text-[1.75rem]/[2.1rem]">
+                    Перевозка опасных грузов
+                  </h4>
+                  <div
+                    class="shrink-0 size-5 lg:size-30 bg-primary lg:bg-white text-white lg:text-primary rounded-full inline-flex items-center justify-center">
+                    <svg class="w-2.5 lg:w-4 h-2 lg:h-2.5" viewBox="0 0 15 11" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.7794 6.01265C15.0625 5.72952 15.0625 5.27048 14.7794 4.98735L10.1655 0.373475C9.88238 0.0903451 9.42334 0.0903451 9.14021 0.373475C8.85708 0.656605 8.85708 1.11565 9.14021 1.39878L13.2414 5.5L9.14021 9.60122C8.85708 9.88435 8.85708 10.3434 9.14021 10.6265C9.42334 10.9097 9.88238 10.9097 10.1655 10.6265L14.7794 6.01265ZM0.733399 6.225L14.2667 6.225L14.2667 4.775L0.733398 4.775L0.733399 6.225Z"
+                        fill="currentColor" />
+                    </svg>
+                  </div>
+                </div>
+                <!-- List -->
+                <ul
+                  class="hidden lg:block bg-white min-h-[7.5rem] text-brand-gray-700 list-disc drop-shadow-lg py-6 pr-30 pl-10">
+                  <li>
+                    <p>Специфика, безопасность, опыт.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="swiper-slide">
+              <div class="group">
+                <div class="overflow-hidden h-[17rem] lg:h-96">
+                  <img class="size-full object-cover group-hover:scale-110 transition duration-200"
+                    src="./assets/image/swiper-product__2.jpeg" alt="swiper-product__2">
+                </div>
+                <div
+                  class="cursor-pointer w-full flex items-center justify-between gap-x-4 bg-white lg:bg-primary text-primary lg:text-white px-30 transition duration-200 hover:bg-primary/75 py-3 border-l-4 border-primary lg:border-transparent">
+                  <h4 class="font-semibold font-plus-sans text-lg lg:text-[1.75rem]/[2.1rem]">
+                    Мультимодальные перевозки
+                  </h4>
+                  <div
+                    class="shrink-0 size-5 lg:size-30 bg-primary lg:bg-white text-white lg:text-primary rounded-full inline-flex items-center justify-center">
+                    <svg class="w-2.5 lg:w-4 h-2 lg:h-2.5" viewBox="0 0 15 11" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.7794 6.01265C15.0625 5.72952 15.0625 5.27048 14.7794 4.98735L10.1655 0.373475C9.88238 0.0903451 9.42334 0.0903451 9.14021 0.373475C8.85708 0.656605 8.85708 1.11565 9.14021 1.39878L13.2414 5.5L9.14021 9.60122C8.85708 9.88435 8.85708 10.3434 9.14021 10.6265C9.42334 10.9097 9.88238 10.9097 10.1655 10.6265L14.7794 6.01265ZM0.733399 6.225L14.2667 6.225L14.2667 4.775L0.733398 4.775L0.733399 6.225Z"
+                        fill="currentColor" />
+                    </svg>
+                  </div>
+                </div>
+                <!-- List -->
+                <ul
+                  class="hidden lg:block bg-white min-h-[7.5rem] text-brand-gray-700 list-disc drop-shadow-lg py-6 pr-30 pl-10">
+                  <li>
+                    <p>Сочетание автомильного и железнодорожного транспорта</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
   </main>
   <!-- Swiper JS -->
