@@ -44,4 +44,4 @@ let productSwiper = new Swiper(".product-swiper__1", {
       spaceBetween: 60,
     },
   }
-});
+}); 
