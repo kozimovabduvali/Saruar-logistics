@@ -160,7 +160,7 @@
   <!-- Main -->
   <main>
     <!-- Hero -->
-    <section class="relative z-0 overflow-x-hidden">
+    <section class="relative z-0 overflow-hidden">
       <!-- Slider -->
       <div class="hero-swiper relative z-0">
         <div class="swiper-wrapper !h-full">
@@ -310,7 +310,7 @@
         </div>
       </div>
       <!-- angular-shape  -->
-      <img class="absolute right-0 bottom-0 z-10 h-[17.3125rem] hidden xl:inline-block"
+      <img class="absolute right-0 bottom-0 translate-y-1 z-10 h-[17.3125rem] hidden xl:inline-block"
         src="./assets/image/angular-shape.png" alt="angular-shape">
     </section>
     <!-- Statistics section displaying key company metrics  -->
@@ -353,7 +353,7 @@
           <p class="text-brand-gray-500">Эффективные логистические решения для вашего бизнеса</p>
         </div>
         <!-- Cards -->
-        <div class="product-swiper__1 mt-12 lg:mt-sixty pb-20">
+        <div class="product-swiper__1 mt-12 lg:mt-sixty">
           <div class="swiper-wrapper">
             <!-- 1 -->
             <div class="swiper-slide">
@@ -463,7 +463,7 @@
                   class="cursor-pointer w-full flex items-center justify-between gap-x-4 bg-white lg:bg-primary text-primary lg:text-white px-30 transition duration-200 hover:bg-primary/75 py-3 border-l-4 border-primary lg:border-transparent">
                   <h4 class="font-semibold font-plus-sans text-lg lg:text-[1.75rem]/[2.1rem]">
                     Мультимодальные перевозки
-                  </h4> 
+                  </h4>
                   <div
                     class="shrink-0 size-5 lg:size-30 bg-primary lg:bg-white text-white lg:text-primary rounded-full inline-flex items-center justify-center">
                     <svg class="w-2.5 lg:w-4 h-2 lg:h-2.5" viewBox="0 0 15 11" fill="none"
@@ -472,7 +472,7 @@
                         d="M14.7794 6.01265C15.0625 5.72952 15.0625 5.27048 14.7794 4.98735L10.1655 0.373475C9.88238 0.0903451 9.42334 0.0903451 9.14021 0.373475C8.85708 0.656605 8.85708 1.11565 9.14021 1.39878L13.2414 5.5L9.14021 9.60122C8.85708 9.88435 8.85708 10.3434 9.14021 10.6265C9.42334 10.9097 9.88238 10.9097 10.1655 10.6265L14.7794 6.01265ZM0.733399 6.225L14.2667 6.225L14.2667 4.775L0.733398 4.775L0.733399 6.225Z"
                         fill="currentColor" />
                     </svg>
-                  </div> 
+                  </div>
                 </div>
                 <!-- List -->
                 <ul
@@ -484,8 +484,111 @@
               </div>
             </div>
           </div>
+          <button
+            class="w-full h-14 sm:hidden flex items-center justify-center gap-x-4 bg-primary text-white rounded-full px-8 transition duration-200 hover:border-primary hover:bg-primary/75 mt-9">
+            <span class="font-bold font-plus-sans text-lg">ВСЕ УСЛУГИ</span>
+            <span class="size-30 bg-white text-primary rounded-full inline-flex items-center justify-center">
+              <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.7794 6.01265C15.0625 5.72952 15.0625 5.27048 14.7794 4.98735L10.1655 0.373475C9.88238 0.0903451 9.42334 0.0903451 9.14021 0.373475C8.85708 0.656605 8.85708 1.11565 9.14021 1.39878L13.2414 5.5L9.14021 9.60122C8.85708 9.88435 8.85708 10.3434 9.14021 10.6265C9.42334 10.9097 9.88238 10.9097 10.1655 10.6265L14.7794 6.01265ZM0.733399 6.225L14.2667 6.225L14.2667 4.775L0.733398 4.775L0.733399 6.225Z"
+                  fill="currentColor" />
+              </svg>
+            </span>
+          </button>
         </div>
     </section>
+
+    <!-- Additional services -->
+    <section class="pt-10 lg:pt-sixty">
+      <div class="max-w-base mx-auto px-30">
+        <h3 class="font-extrabold text-brand-gray-700 text-2xl lg:text-4xl text-center">Дополнительные услуги</h3>
+        <!-- Card -->
+        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-9 2xl:gap-14 mt-8 lg:mt-12">
+          <!-- 1 -->
+          <div
+            class="flex items-center gap-x-8 bg-white drop-shadow__custom backdrop-blur-xl py-4 2xl:py-6 px-4 2xl:px-30">
+            <div
+              class="shrink-0 size-sixty 2xl:size-[4.6875rem] rounded-full bg-primary flex items-center justify-center overflow-hidden">
+              <img src="./assets/icon/vertifiy-icon.svg" alt="vertifiy-icon">
+            </div>
+            <h5 class="font-semibold text-secondary text-lg lg:text-[1.75rem]/[2.1rem]">Страхование грузов</h5>
+          </div>
+          <!-- 2 -->
+          <div
+            class="flex items-center gap-x-8 bg-white drop-shadow__custom backdrop-blur-xl py-4 2xl:py-6 px-4 2xl:px-30">
+            <div
+              class="shrink-0 size-sixty 2xl:size-[4.6875rem] rounded-full bg-primary flex items-center justify-center overflow-hidden">
+              <img src="./assets/icon/location-icon.svg" alt="location-icon">
+            </div>
+            <h5 class="font-semibold text-secondary text-lg lg:text-[1.75rem]/[2.1rem]">Таможенное сопровождение</h5>
+          </div>
+          <!-- 3 -->
+          <div
+            class="md:col-span-2 xl:col-span-1 flex items-center md:justify-center xl:justify-start gap-x-8 bg-white drop-shadow__custom backdrop-blur-xl py-4 2xl:py-6 px-4 2xl:px-30">
+            <div
+              class="shrink-0 size-sixty 2xl:size-[4.6875rem] rounded-full bg-primary flex items-center justify-center overflow-hidden">
+              <img src="./assets/icon/box-icon.svg" alt="box-icon">
+            </div>
+            <h5 class="font-semibold text-secondary text-lg lg:text-[1.75rem]/[2.1rem]">Хранение грузов</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About the company Saruar Logistics -->
+    <section class="mt-24 lg:mt-60">
+      <div class="max-w-base flex flex-col xxl:flex-row gap-10 xxl:gap-sixty mx-auto px-30">
+        <!-- Left -->
+        <div class="xxl:max-w-[33rem] w-full">
+          <!-- Tittle & Description -->
+          <span class="font-medium text-lg text-primary">История и миссия</span>
+          <h2 class="font-plus-sans font-bold text-brand-gray-700 text-3xl lg:text-[2.75rem]/[3.465rem] mt-2.5">О
+            компании
+            Saruar Logistics</h2>
+          <div class="text-brand-gray-500 mt-2">
+            <p>
+              Saruar Logistics, основанная в 2014 году, обладает более чем 10-летним опытом в логистике, успешно помогая
+              бизнесу по всему миру. Мы соединяем страны и бизнесы, создавая надежные логистические решения для
+              бесперебойных поставок.
+            </p>
+            <h6 class="font-bold mt-4">Факты</h6>
+            <ul class="list-disc ml-5 mt-2">
+              <li>50+ современных фур;</li>
+              <li>30+ стран доставки;</li>
+              <li>25 000+ перевозок в год.</li>
+            </ul>
+            <p class="mt-4">Профессионалы с опытом в международных перевозках. Надежность, ответственность и высокое
+              качество сервиса.
+              Saruar Logistics — ваш партнер в грузоперевозках!</p>
+          </div>
+        </div>
+        <!-- Right -->
+        <div class="xxl:shrink-0 flex flex-col-reverse lg:flex-row items-center justify-center xxl:justify-start lg:-space-x-10 lg:space-y-0">
+          <div class="relative z-10 flex lg:flex-col items-end lg:items-start">
+            <!-- years on the market -->
+            <div class="bg-brand-gray-600/10 w-max h-max p-30 lg:ml-24 mb-3 lg:mb-0">
+              <h4 class="font-plus-sans font-extrabold text-primary text-3xl lg:text-[2.75rem]/[3.465rem]">10+</h4>
+              <p class="text-secondary mt-2"> лет на <br> рынке</p>
+            </div>
+            <!-- Lamp -->
+            <div class="lamp-card relative max-w-72 w-full">
+              <div class="relative z-10 bg-primary w-full p-30 pr-5 -translate-x-2 lg:-translate-x-4 -translate-y-2 lg:-translate-y-4">
+                <img class="h-9 lg:h-16" src="./assets/icon/lamp-icon.svg" alt="lamp-icon">
+                <h4 class="font-medium lg:font-semibold text-lg lg:text-[1.375rem]/[1.65rem] mt-5">Наша миссия:</h4>
+                <p class="font-medium text-lg mt-1">
+                  Соединяем страны и бизнесы, создавая надежные логистические решения для бесперебойных поставок.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="relative z-0 w-full lg:max-w-[36.3125rem] lg:aspect-square flex items-center translate-y-20 lg:translate-y-0">
+            <img class="size-full object-cover track-reverse block lg:hidden" src="./assets/image/track.png" alt="track">
+            <img class="w-full object-cover hidden lg:block" src="./assets/image/track.png" alt="track">
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

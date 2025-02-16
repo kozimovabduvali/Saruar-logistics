@@ -39,3 +39,20 @@
   transition: width 0.3s ease-in-out;
   @apply !rounded !h-1.5 lg:!h-2.5 w-30 lg:!w-50 !bg-primary
 }
+
+.lamp-card::after {
+  content: '';
+  clip-path: polygon(0 100%,100% 0,100% 100%);
+  /* background: linear-gradient(); */
+  @apply absolute z-0 right-0 bottom-0 bg-secondary size-full
+}
+
+.drop-shadow__custom {
+  box-shadow: 1px 2px 26.6px 0px #00000026;
+}
+
+
+.track-reverse {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
