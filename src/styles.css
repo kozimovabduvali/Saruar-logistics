@@ -56,3 +56,11 @@
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+
+
+.swiper__sponsors .swiper-button-next::after, .swiper-button-prev::after {
+  @apply !hidden
+}
+.swiper__sponsors .swiper-button-next, .swiper-button-prev {
+  @apply !size-10 border border-brand-gray-600 rounded-full
+}
